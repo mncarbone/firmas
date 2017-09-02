@@ -41,3 +41,8 @@ savePNGButton.addEventListener("click", function (event) {
         window.plugins.socialsharing.share(null, imageName, signaturePad.toDataURL("image/jpeg"), null);
     }
 });
+
+document.addEventListener("backbutton", function(e){
+    e.preventDefault();
+    navigator.app.exitApp();
+});
