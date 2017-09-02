@@ -37,7 +37,6 @@ savePNGButton.addEventListener("click", function (event) {
     if (signaturePad.isEmpty()) {
         alert("Please provide signature first.");
     } else {
-        var img = canvas.toDataURL("image/png");
-        document.write('<img src="'+img+'"/>');
+        window.plugins.socialsharing.share(null, null, canvas.toDataURL(), null)
     }
 });
