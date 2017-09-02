@@ -2,20 +2,20 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.mncarbone.bsi"
+        id        = "com.mncarbone.firmas"
         version   = "1.0.0">
 	<preference name='phonegap-version' value='cli-6.5.0' />
 
-    <name>BSI</name>
+    <name>Firmas</name>
 
     <description>
-        BSI - Basic Subject Index - Candu
+        Firmas
     </description>
 
     <author href="http://phonegap.com" email="mncarbone@na-sa.com.ar">
         MNCarbone
     </author>
-	
+
 	<icon src="img/icon.png" />
-	
+
 </widget>
