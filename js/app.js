@@ -3,7 +3,7 @@ var clearButton = wrapper.querySelector("[data-action=clear]");
 var savePNGButton = wrapper.querySelector("[data-action=save-png]");
 var canvas = wrapper.querySelector("canvas");
 var signaturePad = new SignaturePad(canvas);
-var name = document.getElementById("signature-name").value;
+var imageName = document.getElementById("signature-name").value;
 
 // Adjust canvas coordinate space taking into account pixel ratio,
 // to make it look crisp on mobile devices.
@@ -38,6 +38,6 @@ savePNGButton.addEventListener("click", function (event) {
     if (signaturePad.isEmpty()) {
         alert("Please provide signature first.");
     } else {
-        window.plugins.socialsharing.share(null, name, canvas.toDataURL("image/jpg"), null)
+        window.plugins.socialsharing.share(null, imageName, signaturePad.toDataURL("image/jpeg"), null);
     }
 });
